@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #1A1A1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left-side {
+    position: relative;
+    background: #E3E2DF;
+    padding: 40px;
+}
+
+.container .right-side {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+a {
+    color: black;
+}
+
+/* Left-side */
+
+.profile-photo .imgBox {
+    position: relative;
+    height: 270px;
+    border-radius: 50%;
+}
+
+.profile-photo .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-photo,
+.profile-contacts,
+.profile-skills,
+.profile-languages {
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(2, 2, 2, 1);
+}
+
+.birthday {
+    display: flex;
+    padding: 10px 0 5px 0;
+}
+
+.birthday ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.birthday .icon {
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 20px;
+}
+
+
+.profile-contacts h2 {
+    margin: 10px 0 10px 0;
+}
+
+.profile-contacts ul,
+.profile-languages ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.profile-contacts ul li {
+    position: relative;
+    margin: 5px 0;
+}
+
+.profile-contacts .phone .blya {
+    position: relative;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.profile-contacts .phone .blya .text {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.6em;
+}
+
+.profile-contacts .phone .blya .icon-l {
+    padding-right: 4em;
+    color: rgb(0, 0, 0);
+}
+
+.profile-contacts ul li .icon {
+    display: inline-block;
+    width: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.profile-skills ul {
+    position: relative;
+    list-style: disclosure-closed;
+    padding-left: 20px;
+}
+
+/* Right-side */
+
+h2 {
+    margin: 10px 0 10px 0;
+}
+
+/* About */
+.intro h1 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.intro h3 {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(2, 2, 2, 1);
+}
+
+/* Projects */
+.projects {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(2, 2, 2, 1);
+}
+
+.projects .project-name-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects h3,
+.projects h5,
+.projects h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.project {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.projects h5 {
+    color: rgb(128, 125, 125);
+}
+
+.last-project {
+    margin-top: 10px;
+}
+
+/* Education */
+.education {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(2, 2, 2, 1);
+}
+
+.education h3 {
+    margin: 10px 0 0 0;
+}
+
+.education .date {
+    font-size: 0.8em;
+    color: rgb(128, 125, 125);
+}
+
+/* Interest */
+
+.grid-interest {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interest h2 {
+    margin-bottom: 10px;
+}
+
+.interest ul {
+    margin-top: 0;
+}
